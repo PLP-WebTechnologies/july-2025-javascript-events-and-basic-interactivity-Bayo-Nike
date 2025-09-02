@@ -1,0 +1,32 @@
+body.dark-theme{
+    background: #222;
+    color: white;
+}
+
+#dropzone{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border: 2px dashed #ccc;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+  }
+  
+  .faq-item {
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .faq-item .question {
+    font-weight: bold;
+  }

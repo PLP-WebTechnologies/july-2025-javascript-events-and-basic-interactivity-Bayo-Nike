@@ -1,0 +1,5 @@
+Syntax for Event Listener
+element.addEventListener(event, function,useCapture);
+    event-action trigerring the event (click, hover, keydown, load)
+    function- statements to be executed when the event occurs
+    useCapture- is optional and is a boolean (false by default)

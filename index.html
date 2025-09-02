@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling and Interactive Elements</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Week 6 Assignment</h1>
+    </header>
+    <!-- 3 main ways to attach events to elements in JavaScript: -->
+    <!-- 1. Inline HTML Event Handlers (popular) using an attribute-->
+     <!-- Drawbacks
+        used for small (simple) project  
+        mixing JS with html element
+        you can only do one handler by event-->
+    <button onclick="alert('Button CLicked')">Click Me</button>
+    <button id="myButton">Click Me 2</button>
+    <button id="thirdButton">Click Me 3</button>
+
+    <!-- Interactive Elements -->
+     <!-- 1. Toggle Button (Dark mode example) -->
+    <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    <!-- FAQ Section -->
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+  
+    <div class="faq-item">
+      <h3 class="question">What is this site about?</h3>
+      <p class="answer hidden">This site is a demo for form validation and interactive JavaScript features.</p>
+    </div>
+  
+    <div class="faq-item">
+      <h3 class="question">How do I submit feedback?</h3>
+      <p class="answer hidden">Just fill in the form above and hit submit!</p>
+    </div>
+  </section>
+    <!-- 2. Drag and Drop -->
+     <div id="dropzone">Drop Here</div>
+     <img id="dragItem" src="images/img-1.jpeg" alt="Draggable Image"
+      draggable="true">
+    
+    
+    <p id="output">Waiting ...</p>
+
+    <input type="text" id="txtInputBox" placeholder="Type Something ...">
+    <!-- this is a keyword which used to refer the current item (element,variable,object or item) -->
+    <p onmouseover="this.style.color='red'" 
+    onmouseout="this.style.color='black'">
+        Hover over this text ...
+    </p>
+
+    <!-- Form validation -->
+    <main>
+        <section>
+            <h2>Form Here</h2>
+            <form onsubmit="return validateSignup()">
+                <label for="name">User Name:</label>
+                <input type="text" id="username" placeholder="Enter your username"> <br/>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your Email"> <br/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password"> <br/>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- 2.using DOM Property Method -->
+      
+
+     <!-- 3.using Event Listener Method (Preffered) 
+     html and script separated 
+     allow multiple event handler-->
+     <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
